@@ -1,0 +1,266 @@
+:root{
+    --vermelho: rgb(255, 0, 0);
+    --branco-antigo: #cab69d;
+}
+.bg_effect{
+    background-color: var(--branco-antigo);
+    background-image: url(../imagens/white-fabric-texture.jpg);
+    background-blend-mode: multiply;
+}
+.escudo{
+    width: 30rem;
+    height: auto;
+    margin-left: 31%;
+}
+body{
+font-family: "Barlow Condensed", sans-serif;
+  font-weight: 100; 
+  overflow-x: hidden;
+}
+.apelido{
+    font-size: 8rem;
+
+    text-shadow:
+    0 0 7px #fff,
+    0 0 10px #fff,
+    0 0 21px var(--vermelho),
+    0 0 42px var(--vermelho),
+    0 0 92px var(--vermelho),
+    0 0 102px var(--vermelho),
+    0 0 151px var(--vermelho);
+}
+#primeiro_vasco{
+    z-index: 1;
+    transform: rotate(3deg);
+}
+.titles{
+    font-size: 6rem;
+}
+.titles_idol{
+    margin-bottom: 6.5rem;
+}
+
+/*Photo Tapes*/
+
+.pt1{
+    z-index: 2;
+    position: absolute;
+    margin-top: 2rem;
+    margin-left: 2rem;
+    margin-right: -7rem;
+    transform: rotate(320deg);
+}
+.pt2{
+    z-index: 2;
+    margin-top: 30rem;
+    margin-left: -7rem;
+    margin-right: 2rem;
+    transform: rotate(320deg);
+    background-color: black;
+}
+#pt4{
+    z-index: 2;
+    margin-top: -29rem;
+    margin-left: -17rem;
+    transform: rotate(140deg);
+}
+#pt5{
+    z-index: 2;
+    margin-top: -28rem;
+    margin-right: -24rem;
+    transform: rotate(54deg);
+}
+#pt6{
+    z-index: 2;
+    margin-bottom: -27rem;
+    margin-left: -18rem;
+    transform: rotate(53deg);
+}
+#pt7{
+    z-index: 2;
+    margin-bottom: -27rem;
+    margin-right: -24rem;
+    transform: rotate(140deg);
+}
+.photo_tape{
+    width: 5rem;
+    height: 1.7rem;
+    opacity: 0.75;
+}
+/**/
+
+.team_history{
+    margin-top: -4.5em;
+    background-image: url(../imagens/white-fabric-texture.jpg);
+    background-color: var(--branco-antigo);
+    background-blend-mode: multiply;
+}
+.c_titulo{
+    max-width: 80%;
+}
+.container_infos > *{
+    position: relative;
+    max-width: 30%;
+    height: 5%;
+}
+.pt3{
+    height: 1.7rem;
+    margin-top: -0.6rem;
+    margin-left: 14rem;
+    position: absolute;
+    z-index: 2;
+    
+}
+.team_photo{
+    z-index: 1;
+}
+.icon_camp{
+    margin-top: 6%;
+    max-width: 10%;
+    filter: brightness(0);
+}
+.libertadores{
+    padding-top: 2%;
+    max-width: 7%;
+}
+.cdb{
+    max-width: 5%;
+}
+#vasco74{
+    transform: rotate(0deg);
+}
+
+.slider{
+    width: 100%;
+    height:29vw;
+}
+.carousel{
+    width: max-content;
+    height: 100%;
+    transition: 1s;
+}
+.slide{
+    object-fit: cover;
+    max-width: 100vw;
+    max-height: 100%;
+    text-align: center;
+}
+.carousel:first-child{
+    display: block;
+}
+.buttons{
+    top: 45%;
+    width: 90%;
+    
+}
+#btn_nxt{
+    float: left;
+    margin-right: -4rem;
+    transition: 1s;
+}
+#btn_prev{
+    float: left;
+    transition: 1s;
+}
+.button{
+    padding: auto;
+    width: 2em;
+    height: 2em;
+    background-color: transparent;
+    border: none;
+    border-radius: 50%;
+}
+.button:hover{
+    transform: scale(1.5);
+    transition: 1s;
+    
+}
+
+/* Espaço dos idolos */
+
+.idol_photo{
+    width: 23rem;
+    margin-bottom: -8em;
+    margin-left: 3em;
+    border:10px solid white;
+    border-bottom: 50px solid white;
+}
+.idol_name{
+    margin-bottom: -11rem;
+    margin-right: 18.5rem;
+    font-family: "Special Elite", system-ui;
+    font-size: 6rem;
+    font-weight: 400;
+    font-style: normal;
+}
+.idol_container{
+    width: 90rem;
+    height: 35rem;
+    z-index: 1;
+    margin-top: -4.5em;
+    background-image: url(../imagens/white-fabric-texture.jpg);
+    background-color: var(--branco-antigo);
+    background-blend-mode: multiply;
+}
+
+.photo_elements{
+    position: relative;
+    width: 75vw;
+    margin-left: -5rem;
+    transform: rotate(3deg);
+}
+.handwriting{
+    font-family: "Kalam", cursive;
+    font-weight: 400;
+    font-style: normal;
+    margin-top: -4rem;
+    margin-left: 4rem;
+}
+.idol_info{
+    position: absolute;
+    margin-left: 44rem;
+    margin-top: 10rem;
+}
+.other_idols{
+    margin-left: 14%;
+    display: grid;
+    gap: 50px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+}
+.small_photos{
+    border: 10px solid white;
+    border-bottom: 45px solid white;
+    position: absolute;
+    backface-visibility: hidden;
+    transition: transform 0.5s;
+}
+.small_nick{
+    margin-top: 17rem;
+    margin-right: 3rem;
+}
+
+/* Flip Card */
+.container_card{
+    width: 14rem;
+    height: 20rem;
+}
+.card_flipper{
+    position: relative;
+    transition: transform 900ms;
+    transform-style: preserve-3d;
+    width: 14rem;
+    height: 20rem;
+    perspective: 1000px;
+}
+.front, .back {
+    position: absolute;
+    backface-visibility: hidden;
+  }
+.back{
+    transform: rotateY(180deg);
+}
+.flipped{
+    transform: rotateY(180deg);
+
+}

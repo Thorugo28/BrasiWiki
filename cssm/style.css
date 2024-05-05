@@ -1,0 +1,55 @@
+body{
+    font-family: "Noto Sans Symbols", sans-serif
+}
+header{
+    max-height: 10em;
+}
+.logo{
+    max-width: 10rem;
+}
+#image_bg{
+    background-image: url(../Estádios/Maracana.webp);
+    max-width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    transition: background-image 1s ease-in-out;
+}
+.container_times{
+    max-width: 50%;
+}
+.time{
+    min-width: 10em;
+    max-width: 10em;
+    max-height: 10em;
+    transition: 0.3s;
+}
+
+.time:hover{
+    transition: 0.3s;
+    transform:  scale(1.1) perspective(400px) rotateY(45deg);
+
+}
+.escudo{
+    max-width: 100px;
+    max-height: 100px;
+}
+
+ @media only screen and (max-device-width: 576px) {
+
+    .container_times{
+        display: flex;
+        flex-direction:row ;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .time{
+        min-width: 6em;
+        max-width: 48%;
+        max-height: 6em;
+    }
+    .escudo{
+        max-width: 50px;
+        max-height: 50px;
+    }
+}
